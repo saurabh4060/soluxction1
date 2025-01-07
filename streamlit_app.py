@@ -9,11 +9,10 @@ st.set_page_config(page_title="Bank...",page_icon=":bar_chart",layout='wide')
 st.title(" :bar_chart: Sample Superstore EDA")
 st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow_html=True)
 
-uploaded_file= st.file_uploader(":file_folder: Upload a file",type=(["csv","txt","xls","xlsx"]))
+
 uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
 if uploaded_file:
-    df = pd.read_csv(uploaded_file, encoding="ISO-8859-1")
-    st.write(df)
+    pass
 else:
     st.warning("Please upload a CSV file.")
 
