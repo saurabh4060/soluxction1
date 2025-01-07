@@ -14,9 +14,6 @@ if f1 is not None:
     filename = f1.name
     st.write(filename)
     df = pd.read_csv(filename,encoding="ISO-8859-1")
-else:
-    os.chdir(r"C:\Users\ROCKSTAR\Desktop\example")
-    df= pd.read_csv("C:/Users/ROCKSTAR/Desktop/example/Superstore.csv")
 
 
 col1,col2 = st.columns((2))
