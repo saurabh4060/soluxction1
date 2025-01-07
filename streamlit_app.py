@@ -15,9 +15,13 @@ if f1 is not None:
     st.write(filename)
     df = pd.read_csv(filename,encoding="ISO-8859-1")
 else:
-    os.chdir("C:/Users/ROCKSTAR/Desktop")
-    df= pd.read_csv("C:/Users/ROCKSTAR/Desktop/example/Superstore.csv")
+    # Use a relative path for accessing files
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_path, 'C:/Users/ROCKSTAR/Desktop/example/Superstore.csv')
+    # Read the file
+    df = pd.read_csv(file_path, encoding="ISO-8859-1")
 
+    
 
 col1,col2 = st.columns((2))
 
