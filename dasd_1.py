@@ -15,7 +15,7 @@ if f1 is not None:
     st.write(filename)
     df = pd.read_csv(filename,encoding="ISO-8859-1")
 else:
-    os.chdir("C:/Users/ROCKSTAR/Desktop")
+    
     df= pd.read_csv("C:/Users/ROCKSTAR/Desktop/example/Superstore.csv")
 
 
